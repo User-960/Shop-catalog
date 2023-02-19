@@ -1,0 +1,23 @@
+.header {
+  background-color: $color-medium;
+  &__inner {
+    display: flex;
+    height: 60px;
+    padding: $spacing-small;
+  }
+  &-counter {
+    margin-left: auto;
+    padding-right: $spacing-small;
+    cursor: pointer;
+  }
+  &__number {
+    margin-left: 7px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.bi-basket2 {
+  font-size: 28px;
+  color: rgb(67, 67, 67);
+}

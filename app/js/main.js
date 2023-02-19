@@ -1,6 +1,14 @@
+/* Root elements */
+const ROOT_HEADER = document.querySelector('.header');
+const ROOT_PRODUCTS = document.querySelector('.products');
+const ROOT_SHOPPING = document.querySelector('.shopping');
+const ROOT_SPINNER = document.querySelector('.spinner');
+const ROOT_ERROR = document.querySelector('.error');
+const ROOT_FOOTER = document.querySelector('.footer');
+
 function render() {
   headerPage.render();
-  productsPage.render();
+  // productsPage.render();
 };
 
 let CATALOG = [];
@@ -16,5 +24,6 @@ fetch('server/catalog.json')
 
   })
   .catch(error => {
-    errorPage.render();
+    // errorPage.render();
+    console.log('Error');
   });

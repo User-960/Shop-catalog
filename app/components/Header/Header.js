@@ -6,9 +6,11 @@ class Header {
   render(count) {
     const html = `
       <div class="container">
-        <div class="header-counter" onclick="headerPage.handlerOpenShoppingPage();">
-          <i class="bi bi-basket2"></i>
-          <span class="header-counter_number">${count}</span>
+        <div class="header__inner">
+          <div class="header-counter" onclick="headerPage.handlerOpenShoppingPage();">
+            <i class="bi bi-basket2"></i>
+            <span class="header-counter__number">${count}</span>
+          </div>
         </div>
       </div>
     `;
