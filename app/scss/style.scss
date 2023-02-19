@@ -3,6 +3,9 @@
 @import 'libs';
 @import 'global';
 
+/* Components */
+@import '../components/Header/Header';
+
 body {
   margin: 0;
   padding: 0;

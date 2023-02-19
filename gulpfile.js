@@ -26,6 +26,7 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'app/components/Header/Header.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -73,7 +74,6 @@ function browsersync() {
 function build() {
   return src([
     'app/css/style.min.css',
-    'app/fonts/**/*',
     'app/js/main.min.js',
     'app/*.html'
   ], {base : 'app'})
