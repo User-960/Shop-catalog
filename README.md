@@ -25,7 +25,7 @@
     gulp build
 ***
 
-\* After project build: run the file `dist/index.html` in browser
+\* After project build: run the server and open the file `dist/index.html` in browser
 ***
 
 ### Enable developer mode:
