@@ -1,0 +1,41 @@
+.shopping {
+  &__inner {
+    width: 90%;
+    height: 90vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: $spacing-large;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+  }
+  &__item-name {
+    padding: $spacing-medium;
+    font-weight: bold;
+  }
+  &__item-price {
+    padding: $spacing-medium;
+    color: $color-unaccent;
+  }
+  &__close {
+    position: absolute;
+    width: 38px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    background-image: url(../../images/x-circle-fill.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border: 2px solid $color-white;
+    cursor: pointer;
+  }
+}
+
+.bi-cart-check-fill {
+  font-size: 28px;
+  color: $color-green;
+}
