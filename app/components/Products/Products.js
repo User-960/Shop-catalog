@@ -5,6 +5,23 @@ class Products {
     this.labelRemove = 'Remove from Basket';
   }
 
+  handlerSetLocationStorage(element, id) {
+    console.log(element, id)
+    
+    const { pushProduct, products } = localStorageUtil.putProducts(id);
+
+    if (pushProduct) {
+      element.classList.add(this.classNameActive);
+      element.innerHTML = this.labelRemove;
+    } else {
+      element.classList.remove(this.classNameActive);
+      element.innerHTML = this.labelAdd;
+    }
+
+    // display the number of items in the cart
+    headerPage.render(products.length);
+  }
+
   render() {
     const productsStore = localStorageUtil.getProducts();
     let htmlCatalog = '';

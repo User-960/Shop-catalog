@@ -4,6 +4,7 @@ class LocalStorageUtil {
   }
 
   getProducts() {
+    // Do a check. If there is something in the local storage, then a string will be returned otherwise null will be returned
     const productsLocalStorage = localStorage.getItem(this.keyName);
     if (productsLocalStorage !== null) {
       return JSON.parse(productsLocalStorage);
@@ -15,6 +16,8 @@ class LocalStorageUtil {
     let products = this.getProducts();
     let pushProduct = false;
 
+    // check if items in local storage matched
+    // index shows what position id occupies
     const index = products.indexOf(id);
     if (index === -1) {
       products.push(id);
