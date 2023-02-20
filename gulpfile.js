@@ -25,8 +25,10 @@ function styles() {
 
 function scripts() {
   return src([
+    'app/constants/root.js',
     'node_modules/jquery/dist/jquery.js',
     'app/components/Header/Header.js',
+    'app/components/Products/Products.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
