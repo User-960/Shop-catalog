@@ -5,6 +5,8 @@ function render() {
   productsPage.render();
 };
 
+spinnerPage.render();
+
 let CATALOG = [];
 
 fetch('server/catalog.json')
@@ -14,11 +16,13 @@ fetch('server/catalog.json')
     console.log(CATALOG)
 
     setTimeout(() => {
+      spinnerPage.handlerClear();
       render();
     }, 1000);
 
   })
   .catch(error => {
+    spinnerPage.handlerClear();
     // errorPage.render();
     console.log('Error');
   });
