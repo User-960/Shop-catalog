@@ -2,11 +2,13 @@ class Error {
 
   render() {
     const html = `
-      <div class="error-container">
-        <img class="error__img" src="components/Error/images/error.svg" alt="Error! No access."/>
-        <div class="error-message">
-          <h3>No access!</h3>
-          <p>Try again later.</p>
+      <div class="container">
+        <div class="error__inner">
+          <img class="error__img" src="../../images/Error/error.svg" alt="Error! No access."/>
+          <div class="error__message">
+            <h3>No access!</h3>
+            <p>Try again later.</p>
+          </div>
         </div>
       </div>
     `;

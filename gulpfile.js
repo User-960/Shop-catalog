@@ -32,6 +32,7 @@ function scripts() {
     'app/components/Products/Products.js',
     'app/components/Shopping/Shopping.js',
     'app/components/Spinner/Spinner.js',
+    'app/components/Error/Error.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
