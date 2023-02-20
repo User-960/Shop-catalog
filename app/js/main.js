@@ -13,7 +13,6 @@ fetch('server/catalog.json')
   .then(result => result.json())
   .then(data => {
     CATALOG = data;
-    console.log(CATALOG)
 
     setTimeout(() => {
       spinnerPage.handlerClear();
