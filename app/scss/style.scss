@@ -17,3 +17,19 @@ body {
   line-height: 1.7;
   background-color: $color-light;
 }
+
+.logo {
+  display: flex;
+  &__img {
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+  }
+  &__title {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+}
