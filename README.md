@@ -1,33 +1,42 @@
 # Shop-catalog
-  The main purpose of the project is to write the logic for sending a GET request to an arbitrary server. Then display the resulting data (JSON) as a product catalog. Another task is to write the logic for saving data in the browser's local storage.
-  The Shop-catalog is built on the assembler gulp.
-  
-  What is used:
+
+The main purpose of the project is to write the logic for sending a GET request to an arbitrary server. Then display the resulting data (JSON) as a product catalog. Another task is to write the logic for saving data in the browser's local storage.
+The Shop-catalog is built on the task-runner gulp.
+
+What is used:
 
 - Programming languages: HTML, CSS, JavaScript;
 - Task runner: Gulp;
 - Preprocessor: SCSS;
 
-## Run the commands to start the application:
-### Clone a repository:
-    git clone https://github.com/User-960/Shop-catalog.git
-***
-### Installing dependencies:
-    cd Shop-catalog
-    npm install
+To clone repository
 
-    or
+```shell
+git clone https://github.com/User-960/Shop-catalog.git
+```
 
-    yarn install
-***
+To install packages, use the command
 
-### Build project:
-    gulp build
-***
+```shell
+npm install
+```
 
-\* After project build: run the server and open the file `dist/index.html` in browser
-***
+## Commands
 
-### Enable developer mode:
-    gulp
-*** 
+### Building a project without optimization and launch on server
+
+```shell
+npm run build-dev
+```
+
+### Building a project with optimization
+
+```shell
+npm run build-prod
+```
+
+### Cleaning up the dist folder
+
+```shell
+npm run clear
+```
