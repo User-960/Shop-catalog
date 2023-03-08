@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-dev": "gulp",
+    "build-prod": "gulp build",
+    "clear": "rd /s /q dist",
+    "server": "json-server --watch app/server/db.json -p 3001",
+    "server-dev": "concurrently \"npm run build-dev\" \"npm run server\""
   },
   "author": "Ivan Volodin",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.11",
+    "concurrently": "^7.6.0",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -18,6 +23,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.3",
+    "json-server": "^0.17.2",
     "sass": "^1.57.1"
   }
 }
